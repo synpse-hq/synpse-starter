@@ -1,0 +1,13 @@
+name: synpse-starter
+description: Example application running on Synpse
+scheduling:
+  type: AllDevices
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      ports:
+        - 8888:80
+      env:
+        - name: NGINX_PORT
+          value: "80"
