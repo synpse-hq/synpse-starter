@@ -4,10 +4,7 @@ scheduling:
   type: AllDevices
 spec:
   containers:
-    - name: nginx
-      image: nginx
+    - name: hello
+      image: quay.io/synpse/hello-synpse-go
       ports:
-        - 8888:80
-      env:
-        - name: NGINX_PORT
-          value: "80"
+        - 8080:8080
