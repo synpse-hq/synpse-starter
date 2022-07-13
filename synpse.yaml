@@ -7,4 +7,4 @@ spec:
     - name: hello
       image: quay.io/synpse/hello-synpse-go
       ports:
-        - 8080:8080
+        - 15080:8080
